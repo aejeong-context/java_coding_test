@@ -24,7 +24,6 @@ public class Test1_04 {
         }
         // 홀수일 때
       } else {
-        System.out.println("여긴 들어와?");
         while (p != m) {
           char tmp = ch[m];
           ch[m] = ch[p];
