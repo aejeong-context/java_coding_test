@@ -3,14 +3,23 @@ import java.util.Scanner;
 public class Test1_09 {
 
   public int solution(String sentence) {
-    String result = "";
-    for (int i = 0; i < sentence.length(); i++) {
-      if (!Character.isAlphabetic(sentence.charAt(i))) {
-        result += sentence.charAt(i);
+    int result = 0;
+//    for (int i = 0; i < sentence.length(); i++) {
+//      if (Character.isDigit(sentence.charAt(i))) {
+//        result += sentence.charAt(i);
+//      }
+//    }
+    char[] ch = sentence.toCharArray();
+
+    for(char x : ch){
+      // 아스키 코드 48 ~ 57 이 숫자
+      if(x>=48 && x<=57){
+        result = result * 10 +(x-48);
+
       }
     }
 
-    return Integer.parseInt(result);
+    return result;
   }
 
   public static void main(String[] args) {
