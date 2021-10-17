@@ -4,7 +4,7 @@ public class Test1_10 {
   public int[] solution(String s, char t) {
     int[] result = new int[s.length()];
 
-    int tmp = 0;
+    int tmp = 1000;
 
     // 왼쪽으로 부터 떨어진 거리를 구한다.
     for (int i = 0; i < s.length(); i++) {
@@ -17,7 +17,7 @@ public class Test1_10 {
     }
 
     // 오른쪽으로 부터 떨어진 거리를 구한다.
-    tmp = 0;
+    tmp = 1000;
     for (int i = s.length() - 1; i >= 0; i--) {
       if (s.charAt(i) == t) {
         tmp = 0;
