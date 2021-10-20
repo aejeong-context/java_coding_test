@@ -7,8 +7,6 @@ public class Test2_01 {
     ArrayList<Integer> result = new ArrayList<>();
     result.add(numberArray[0]);
     for (int i = 0; i < numberArray.length-1; i++) {
-      System.out.println(numberArray[i]);
-      System.out.println(numberArray[i+1]);
       if(numberArray[i]<numberArray[i+1]){
         result.add(numberArray[i+1]);
       }
