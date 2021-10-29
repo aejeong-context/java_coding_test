@@ -5,15 +5,14 @@ public class Test2_08 {
 
   public ArrayList<Integer> solution(int[] numArray) {
     ArrayList<Integer> result = new ArrayList<>();
-    int resultNumber = 1;
     for (int i = 0; i < numArray.length; i++) {
+    int resultNumber = 1;
       for (int j = 0; j < numArray.length; j++) {
         if (numArray[i] < numArray[j]) {
           resultNumber++;
         }
       }
       result.add(resultNumber);
-      resultNumber=1;
     }
 
     return result;
