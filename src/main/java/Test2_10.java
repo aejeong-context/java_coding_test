@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Test02_10 {
+public class Test2_10 {
 
   public int solution(int[][] numberArray, int num) {
     // 상하좌우
@@ -31,7 +31,7 @@ public class Test02_10 {
   }
 
   public static void main(String[] args) {
-    Test02_10 main = new Test02_10();
+    Test2_10 main = new Test2_10();
     Scanner sc = new Scanner(System.in);
     int num = sc.nextInt();
     int[][] numberArray = new int[num][num];
